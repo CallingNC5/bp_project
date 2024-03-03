@@ -5,3 +5,19 @@ function setValue() {
     + "\nmm/dd/yyyy 1. (food): Ingredients:food,food,food Cooking Instructions:Step1:stuff,Step2:stuff\n\nDo not include which meal of the day it is.";
     alert(input);
 }
+
+function postData(input) {
+    $.ajax({
+        type: "POST",
+        url: "/reverse_pca.py",
+        data: { param: input },
+        success: callbackFunc
+    });
+}
+
+function callbackFunc(response) {
+    alert(response);
+    console.log(response);
+}
+
+postData('data to process');
