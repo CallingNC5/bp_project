@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+
 <body>
-    <h1>Cooking Help</h1>
+    <div>
+        <h2>What type of food would you like to eat?</h2>
+        <input type="text" id="foodType" value="(e.i. Mexican)"></div>
+        <h2>What is the starting and stopping date for when you want to eat this type of food?</h2>
+        <h4>Start Date:</h4>
+        <input type="text" id="startDate" value="mm/dd/yyyy"></div>
+        <h4>End Date:</h4>
+        <input type="text" id="endDate" value="mm/dd/yyyy"></div>
+        <h2>How many meals per day would you like to eat?</h2>
+        <input type="text" id="numOfMeals" value="#"></div>
+        <div class="button-container">
+            <div id="search" onclick="setValue()">Generate</div>
+        </div>
+    </div>
 </body>
+
+<script src="index.js"></script>
