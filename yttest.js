@@ -30,6 +30,12 @@ form.addEventListener('submit', async (e) => {
 
             if (response.ok) {
                 const data = await response.json();
+                let json = JSON.parse(data.choices[0].message.content);
+                for (const j in json) {
+                    const m = "json"+"."+j;
+                    console.log(eval(m));
+                  }
+                
                 responseTextarea.value = data.choices[0].message.content;
             } else {
                 responseTextarea.value = 'Error: Unable to process your request.';
