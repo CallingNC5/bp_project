@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     margin-top: 1px;
-    color:grey;
+    color:black;
 }
 
 h3 {
@@ -55,4 +55,7 @@ h5 {
     justify-content: center;
 }
 
-
+textarea {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
